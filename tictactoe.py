@@ -4,7 +4,7 @@ Two players play tic tac toe together
 A collaborative project made by 6th block APCSP
 '''
 
-''' -------------------USER INPUT----------------------- '''
+''' -----------------CREATE-GAME-BOARD------------------ '''
 
 
 
@@ -12,7 +12,7 @@ A collaborative project made by 6th block APCSP
 
 
 
-''' ---------------PLACE MOVES IN BOARD----------------- '''
+''' -------------------USER-INPUT----------------------- '''
 
 
 
@@ -20,7 +20,7 @@ A collaborative project made by 6th block APCSP
 
 
 
-''' ---------------HORIZONTAL WIN CASE------------------ '''
+''' ---------------HORIZONTAL-WIN-CASE------------------ '''
 
 
 
@@ -28,22 +28,14 @@ A collaborative project made by 6th block APCSP
 
 
 
-''' ----------------VERTICAL WIN CASE------------------- '''
+''' ----------------VERTICAL-WIN-CASE------------------- '''
 
 
 ''' ---------------------------------------------------- '''
 
 
 
-''' -----------------DIAGONAL WIN CASE------------------ '''
-
-
-
-''' ---------------------------------------------------- '''
-
-
-
-''' -----------------DISPLAY GAME BOARD----------------- '''
+''' -----------------DIAGONAL-WIN-CASE------------------ '''
 
 
 
@@ -51,7 +43,15 @@ A collaborative project made by 6th block APCSP
 
 
 
-''' ------------------LOOP UNTIL WIN-------------------- '''
+''' -----------------DISPLAY-GAME-BOARD----------------- '''
+
+
+
+''' ---------------------------------------------------- '''
+
+
+
+''' ------------------LOOP-UNTIL-WIN-------------------- '''
 
 
 
