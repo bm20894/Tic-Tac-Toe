@@ -1,43 +1,42 @@
-# Tic-Tac-Toe
-### A Guide to Collaboration
-When working on any sort of project, it is almost always easier to have a helping hand. Coding is only a small part of *the development process*; collaborating with other programmers is a skill that is often overlooked, but equally as valuable. How good is a teammate in a group project if they can't work with anyone else? Hint: not very good. This project will teach you the basics of *version control* and how to work with multiple people on the same project.
+تيك تاك تو
+دليل التعاون
+عند العمل في أي نوع من المشاريع ، يكون من الأسهل دائمًا الحصول على يد المساعدة. الترميز هو جزء صغير فقط من عملية التطوير. إن التعاون مع المبرمجين الآخرين هو مهارة غالبًا ما يتم تجاهلها ، ولكن بنفس القدر من الأهمية. ما مدى جودة فريق العمل في مشروع جماعي إذا لم يتمكنوا من العمل مع أي شخص آخر؟ تلميح: ليست جيدة جدا. سيعلمك هذا المشروع أساسيات التحكم في الإصدار وكيفية العمل مع أشخاص متعددين في نفس المشروع.
 
-### The Game
-We all know how Tic Tac Toe works, but here are the rules anyway:
-1. A **3 x 3 game board** is set up with every space empty.
-1. Two players alternate turns; each player has a marker (X and O).
-1. On their turn, the player may choose an **empty space** to place their marker.
-1. If any player completes a sequence of 3 markers in the game board, they win! Players can complete a sequence in these 3 ways:
-	1. **Horizontally**
-	1. **Vertically**
-	2. **Diagonally**
-1. Continue playing until a player wins, or there are no more empty spaces left on the game board.
+اللعبة
+نعلم جميعًا كيف يعمل Tic Tac Toe ، لكن إليك القواعد على أي حال:
 
-### Tasks
-Just like any other problem that needs solving, the game of Tic Tac Toe can be broken down into several smaller problems, typically refered to as **subtasks**.
-Solving many subtasks is often much easier to do than solving one large task. For example: your task is to `solve 14 * 4`. This looks pretty difficult, so let's break it up into subtasks. We know that `4 + 10 = 14`, so we can break up the large task into the combination of two subtasks: `4 * 4 = 24`, and `10 * 4 = 40`. Now, our large task (`14 * 4`) can be rewritten into `(4 * 4) + (10 * 4)`. We already know how to solve the subtasks: `4 * 4 = 16` and `10 * 4 = 40`. Great! We have all the pieces we need to solve our initial task! `14 * 4 = (4 * 4) + (10 * 4) = 16 + 40 = 56` And just like that, we have our answer: **56**.
+تم إعداد لوحة ألعاب 3 × 3 مع كل مساحة فارغة.
+لاعبان بديلان يتحولان. كل لاعب لديه علامة (X و O).
+من جانبهم ، قد يختار اللاعب مساحة فارغة لوضع علاماته.
+إذا أكمل أي لاعب سلسلة من 3 علامات في لوحة اللعبة ، فسيفوز! يمكن للاعبين إكمال تسلسل بهذه الطرق الثلاث:
+أفقيا
+عموديا
+انحرافي
+استمر في اللعب حتى يفوز لاعب ، أو لم تعد توجد مساحات فارغة على لوحة اللعبة.
+مهام
+تماما مثل أي مشكلة أخرى تحتاج إلى حل ، يمكن تقسيم لعبة Tic Tac Toe إلى عدة مشاكل أصغر ، عادة ما يشار إليها كمهام فرعية. غالباً ما يكون حل العديد من المهام الفرعية أسهل بكثير من حل مهمة واحدة كبيرة. على سبيل المثال: مهمتك هي حل 14 * 4. هذا يبدو صعبًا جدًا ، لذلك دعنا نفصلها إلى مهام فرعية. نحن نعلم أن 4 + 10 = 14 ، حتى نتمكن من تقسيم المهمة الكبيرة إلى مجموعتين فرعيتين: 4 * 4 = 24 ، و 10 * 4 = 40. الآن ، يمكن إعادة كتابة مهمتنا الكبيرة (14 * 4) في (4 * 4) + (10 * 4). نحن نعلم بالفعل كيفية حل المهام الفرعية: 4 * 4 = 16 و 10 * 4 = 40. رائع! لدينا كل القطع التي نحتاجها لحل مهمتنا الأولية! 14 * 4 = (4 * 4) + (10 * 4) = 16 + 40 = 56 وبهذا الشكل ، لدينا إجابة: 56.
 
-## Our Tasks
-No, Tic Tac Toe is not an extremely advanced game. But just like any other problem that needs solving, it is easier to solve subtasks, and two (or more) heads are better than one. Each table group will be working together on a task of their choice. To avoid any confusion between groups, each task has a set of rules / codes / **style guides** that must be followed. The list of tasks is as follows:
-* **Create Game Board**: Initialize a 3 x 3 game board in the form of a 2 dimensional list.
-	* *Rule*: Store game board in variable called `game_board`.
-* **User Input**: Get input from player X and player O: store player marker (X or O) and where they are playing on the board in variables, then place marker in game board.
-	* *Rule*: Placed move variable will be called `move_index` and current player will be called `current_player`.
-* **Win Cases (3)**: If `current_player` has won the game,end program.
-	* **Horizontal**: Check if `current_player` has occupied an entire row.
-	* **Vertical**: Check if `current_player` has occupied an entire column.
-	* **Diagonal**: Check if `current_player` has made a diagonal sequence from corner to opposite corner.
-* **Display Current Game Board**: Print out `game_board` to user(s), and make it look pretty!
-* **Keep the Game Going**: Loop until either a player has won the game or the game ends in a tie.
+مهامنا
+لا ، تيك تاك تو ليست لعبة متقدمة للغاية. ولكن مثل أي مشكلة أخرى تحتاج إلى حل ، فمن الأسهل حل المهام الفرعية ، ورأسين (أو أكثر) أفضل من واحد. سوف تعمل كل مجموعة جدول معاً في مهمة من اختيارهم. لتجنب أي ارتباك بين المجموعات ، تحتوي كل مهمة على مجموعة من أدلة القواعد / الأكواد / الأنماط التي يجب اتباعها. قائمة المهام على النحو التالي:
 
-# Workflow
-Each table will pick one person to **fork** this repository (`bm20894/Tic-Tac-Toe`). Their tablemates will work on *that forked repository* together. Because we won't be writing a boatload of code, you really only need one person in your table typing. Each table should follow this process for working:
-1. Fork **this repository**. This will create a "copy" of the current repository in your GitHub account. It will look something like this: `mshunt/Tic-Tac-Toe`
-1. Work together in your teams to write some code that solves your subtask. Each team has a section outlined in the main file, `tictactoe.py`. Add your code in your section. When you think it looks good, brace yourselves; a storm's a comin'.
-1. Click on the `Upload Files` button. **Drag and Drop** your file into the box to add it to your commit.
-1. Commit your changes to the `master` branch in your forked repository. This updates the code you just wrote from your computer to your team's repository on GitHub.
-1. If everything looks good and fits the styleguide, submit a **Pull Request** to to the *real* repository: `bm20894/Tic-Tac-Toe`. Add a brief description of what your team did to solve your subtask, and contribute to the larger project.
-1. If you got to this point, congrats! You can sit back and relax until the host of the repository (Miles) accepts your **Pull Request**, adding your code to the larger project.
+إنشاء لوحة اللعبة: قم بتهيئة لوحة ألعاب 3 × 3 في شكل قائمة ثنائية الأبعاد.
+القاعدة: قم بتخزين لوحة اللعبة في المتغير المسمى game_board.
+إدخال المستخدم: احصل على الإدخال من المشغل X واللاعب O: علامة مشغل المتجر (X أو O) وأين يلعبان على اللوحة في المتغيرات ، ثم ضع علامة في لوحة اللعبة.
+القاعدة: سيسمى متغير الحركة الذي تم وضعه move_index وسيطلق على اللاعب الحالي current_player.
+فوز الحالات (3): إذا فاز current_player اللعبة ، نهاية البرنامج.
+أفقي: تحقق مما إذا كان current_player يشغل صفًا كاملاً.
+رأسي: تحقق مما إذا كان current_player يشغل عمودًا كاملاً.
+قطري: تحقق مما إذا كان current_player قد صنع تسلسلاً مائلًا من الركن إلى الركن المقابل.
+عرض لوحة اللعبة الحالية: قم بطباعة لعبة game_board إلى المستخدم (المستخدمين) ، وجعلها تبدو جميلة!
+حافظ على اللعبة Going: Loop حتى يفوز أي لاعب باللعبة أو تنتهي المباراة بالتعادل.
+سير العمل
+سيقوم كل جدول باختيار شخص واحد لتوجيه هذا المستودع (bm20894 / Tic-Tac-Toe). سيعمل زملاءهم على هذا المستودع المتشعب معًا. نظرًا لأننا لن نكتب حملًا للقوارب ، فأنت تحتاج فقط إلى شخص واحد في جدولك. يجب أن يتبع كل جدول هذه العملية للعمل:
 
-## Questions
-If you have any questions, don't be afraid to ask! As the saying goes, Rome wasn't built in a day, and it sure wasn't founded by just one person (it was founded by two). If your tablemates don't know the answer right now, they will in a minute if you ask someone who does! 
+شوكة هذا المستودع. سيؤدي ذلك إلى إنشاء "نسخة" من المخزون الحالي في حسابك على GitHub. سيبدو شيء من هذا القبيل: mshunt / Tic-Tac-Toe
+اعمل معًا في فرق العمل لكتابة بعض الرموز التي تحل مهمتك الفرعية. يحتوي كل فريق على قسم محدد في الملف الرئيسي ، tictactoe.py. أضف شفرتك في قسمك. عندما تظن أنها تبدو جيدة ، استعدوا لأنفسكم. العاصفة قادمة.
+انقر على زر تحميل الملفات. اسحب الملف وأفلته في المربع لإضافته إلى التزامك.
+قم بإدخال التغييرات على الفرع الرئيسي في المستودع الخاص بك. يقوم هذا بتحديث الرمز الذي كتبته للتو من جهاز الكمبيوتر الخاص بك إلى مستودع فريقك على GitHub.
+إذا كان كل شيء يبدو جيداً ويلائم أسلوب التصميم ، قم بتقديم طلب سحب إلى المستودع الحقيقي: bm20894 / Tic-Tac-Toe. أضف وصفًا موجزًا ​​لما فعله فريقك لحل مهمتك الفرعية ، والمساهمة في المشروع الأكبر.
+إذا وصلت إلى هذه النقطة ، تهانينا! يمكنك الجلوس والاسترخاء حتى يقبل مضيف المستودع (مايلز) طلب السحب الخاص بك ، مع إضافة الرمز الخاص بك إلى المشروع الأكبر.
+الأسئلة
+إذا كان لديك أي أسئلة ، فلا تخف من أن تسأل! وكما يقول المثل ، لم يتم بناء روما في يوم واحد ، ومن المؤكد أنه لم يتم تأسيسه من قبل شخص واحد (تم تأسيسه من قبل اثنين). إذا كان زملاؤك في المنزل لا يعرفون الإجابة في الوقت الحالي ، فسوف يحدث ذلك في دقيقة إذا طلبت من شخص ما فعل ذلك!
