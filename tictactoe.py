@@ -25,9 +25,18 @@ print('Hello there!')
 
 
 ''' ---------------HORIZONTAL-WIN-CASE------------------ '''
-
-
-
+def checkHorizontal():
+    global game_board
+    for i, row in enumerate(game_board):
+        if game_board[i] == ['X','X','X'] or game_board[i] == ['O','O','O']:
+            print('win')
+            win = True
+            return win
+        else:
+            win = False
+    return win
+print(checkHorizontal())
+               
 ''' ---------------------------------------------------- '''
 
 
@@ -111,6 +120,7 @@ def draw_board():
 
 
 ''' ---------------------------------------------------- '''
+
 
 
 root.mainloop()
