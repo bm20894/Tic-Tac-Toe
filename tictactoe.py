@@ -5,9 +5,6 @@ Two players play tic tac toe together
 A collaborative project made by 6th block APCSP
 '''
 
-# Miles added this code ->
-print('Hello there!')
-
 
 ''' -----------------CREATE-GAME-BOARD------------------ '''
 
@@ -62,10 +59,8 @@ def checkHorizontal():
         else:
             win = False
     return win
-print(checkHorizontal())
                
 ''' ---------------------------------------------------- '''
-
 
 
 ''' ----------------VERTICAL-WIN-CASE------------------- '''
@@ -84,9 +79,7 @@ def check_vertical():
 ''' ---------------------------------------------------- '''
 
 
-
 ''' -----------------DIAGONAL-WIN-CASE------------------ '''
-
 def check_diagonal():
     global game_board
     #Initialize win to false
@@ -98,19 +91,13 @@ def check_diagonal():
         elif game_board[0][2] == game_board[1][1] and game_board[1][1] == game_board[2][0]:    #Checks upper right to lower left diagonal.
             win = True    #Changes win to true
     return win        #Returns win
-
-
-
 ''' ---------------------------------------------------- '''
 
 
-
 ''' -----------------DISPLAY-GAME-BOARD----------------- '''
-
 import tkinter
 
 class boardDraw:
-    
     global canvas
     
     def __init__(self, master):
@@ -123,7 +110,6 @@ class boardDraw:
         self.canvas.create_rectangle(100,0,200,300)
         self.canvas.create_rectangle(200,0,300,300)
         
-    
     def draw_board(self):
         x=0
         y=0
@@ -138,25 +124,22 @@ class boardDraw:
             y=0
         x+= 1 
         
-        
 global root
 root = tkinter.Tk()
 global board
 board = boardDraw(root) 
 
-        
 def draw_board():
     board.draw_board()
-
 ''' ---------------------------------------------------- '''
 
 
 
 ''' ------------------LOOP-UNTIL-WIN-------------------- '''
 repeat = True
-while(repeat == True):
+while repeat:
     current_player = 0
-    while(i<10):
+    while i < 10:
         game_board = initializeboard()
         current_player = "X"
         player1 = user_input()
@@ -178,15 +161,6 @@ while(repeat == True):
     final = str(input("enter 'yes' to play again"))
     if(final != 'yes'):
         repeat = False
-
-        
-        
-
-    
-
-
 ''' ---------------------------------------------------- '''
-
-
 
 root.mainloop()
