@@ -5,7 +5,7 @@ A collaborative project made by 6th block APCSP
 '''
 
 # Miles added this code ->
-print('Hello World!')
+print('Hello there!')
 
 
 ''' -----------------CREATE-GAME-BOARD------------------ '''
