@@ -40,4 +40,4 @@ Each table will pick one person to **fork** this repository (`bm20894/Tic-Tac-To
 1. If you got to this point, congrats! You can sit back and relax until the host of the repository (Miles) accepts your **Pull Request**, adding your code to the larger project.
 
 ## Questions
-If you have any questions, don't be afraid to ask! As the saying goes, Rome wasn't built in a day, and it sure wasn't founded by just one person (it was founded by two). If your tablemates don't know the answer right now, they will in a minute if you ask someone who does! 
+If you have any questions, don't be afraid to ask! As the saying goes, Rome wasn't built in a day, and it sure wasn't founded by just one person (it was founded by two). If your tablemates don't know the answer right now, they will in a minute if you ask someone who does!
