@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 ### A Guide to Collaboration
-When working on any sort of project, it is almost always easier to have a helping hand. Coding is only a small part of *the development process*; collaborating with other programmers is a skill that is often overlooked, but equally as valuable. How good is a teammate in a group project if they can't work with anyone else? Hint: not very good. This project will teach you the basics of *version control* and how to work with multiple people on the same project.
+When working on any sort of project, it is almost always easier to have a helping hand. Coding is a small part of *the development process*; collaborating with other programmers is a skill that is often overlooked, but equally as valuable. How good is a teammate in a group project if they can't work with anyone else? Hint: not very good. This project will teach you the basics of *version control* and how to work with multiple people on the same project.
 
 ### The Game
 We all know how Tic Tac Toe works, but here are the rules anyway:
